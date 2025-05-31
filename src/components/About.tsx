@@ -52,16 +52,18 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 Background
               </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                I&apos;m a Computer Science student and aspiring software engineer with a passion for building efficient, user-friendly applications. 
-                My journey in tech began as a kid tinkering with computers, and I&apos;ve been hooked ever since.
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                I&apos;m a Junior Computer Science student at Old Dominion University. I got into tech when
+                I was a kid just trying to make mods for my favorite games. That curiosity practically evolved
+                overnight. I started learning how games worked under the hood, which led me to explore tools
+                like Cheat Engine and dive into video game hacking. I wasn&apos;t in it to cheat, though. I was
+                fascinated by how software could be manipulated and how systems were built.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                I&apos;m currently working on Clockwork, a full-stack web application for managing employee schedules. 
-                I&apos;m also learning Go and exploring cloud technologies.
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                I&apos;m always looking for new challenges and opportunities to grow as a developer.
+                That early interest in reverse engineering eventually turned into a passion for software development.
+                Now, I love building full-stack applications, working on fun side projects, and constantly challenging myself
+                to learn new tools and technologies. Whether I&apos;m coding something practical or just experimenting, I&apos;m always
+                trying to grow as a developer.
               </p>
             </div>
 
