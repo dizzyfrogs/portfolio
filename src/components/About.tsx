@@ -144,7 +144,7 @@ const About = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                  <span>Dean's List - Germanna Community College, 2023-2025</span>
+                  <span>Dean&apos;s List - Germanna Community College, 2023-2025</span>
                 </li>
               </ul>
             </div>
