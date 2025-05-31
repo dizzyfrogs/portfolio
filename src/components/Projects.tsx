@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Hevy Follow Manager",
     description: "Modular automation tool for increasing user engagement on Hevy.",
     technologies: ["Python", "API"],
-    imageUrl: "${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/hevy.png",
+    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/hevy.png`,
     status: "in-progress"
   }
 ];
