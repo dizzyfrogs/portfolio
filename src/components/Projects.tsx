@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     title: "Clockwork",
     description: "A full-stack web application for managing employee schedules.",
-    technologies: ["React Native", "Expo", "PostgreSQL", "Go"],
+    technologies: ["React Native", "Expo", "TypeScript", "Go", "Gin", "PostgreSQL", "Auth0"],
     status: "in-progress",
     imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/clockwork.png`
   },
@@ -38,20 +38,19 @@ const projects: Project[] = [
     status: "completed"
   },
   {
-    title: "ContactsApp",
-    description: "A contacts management application built with Flask, SQLAlchemy & Python.",
-    technologies: ["Python", "SQLAlchemy", "Flask"],
-    githubUrl: "https://github.com/dizzyfrogs/ContactsApp",
-    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/contactsapp.jpg`,
-    status: "completed"
-  },
-  {
     title: "Encrypted Tic-Tac-Toe",
     description: "Command-line tic-tac-toe that serializes and encrypts every move.",
     technologies: ["Python", "Cryptography"],
     githubUrl: "https://github.com/dizzyfrogs/encrypted-tic-tac-toe",
     imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/tictactoe.png`,
     status: "completed"
+  },
+  {
+    title: "Hevy Follow Manager",
+    description: "Modular automation tool for increasing user engagement on Hevy.",
+    technologies: ["Python", "API"],
+    imageUrl: "${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/hevy.png",
+    status: "in-progress"
   }
 ];
 
