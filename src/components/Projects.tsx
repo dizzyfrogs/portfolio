@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface Project {
   title: string;
@@ -57,8 +56,6 @@ const projects: Project[] = [
 ];
 
 const Projects = () => {
-  const [hoveredProject, setHoveredProject] = useState<string | null>(null);
-
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,8 +70,6 @@ const Projects = () => {
             <div
               key={project.title}
               className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2"
-              onMouseEnter={() => setHoveredProject(project.title)}
-              onMouseLeave={() => setHoveredProject(null)}
             >
               {project.imageUrl && (
                 <div className="relative h-48 w-full">
