@@ -18,14 +18,14 @@ const education: Education[] = [
     minor: "Minor in Cybersecurity",
     gpa: "N/A",
     date: "Expected May 2027",
-    logoUrl: "/education/odu.jpg"
+    logoUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/education/odu.jpg`
   },
   {
     school: "Germanna Community College",
     degree: "Associates in Computer Science",
     gpa: "3.77",
     date: "May 2025",
-    logoUrl: "/education/germanna.jpg"
+    logoUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/education/germanna.jpg`
   }
 ];
 

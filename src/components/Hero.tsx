@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="mb-8 flex justify-center">
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-blue-600 dark:border-blue-400 shadow-lg">
             <Image
-              src="/profile-photo.jpg"
+              src={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/profile-photo.jpg`}
               alt="Sully's profile photo"
               fill
               className="object-cover"

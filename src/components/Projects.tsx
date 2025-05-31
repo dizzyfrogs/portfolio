@@ -16,9 +16,9 @@ const projects: Project[] = [
   {
     title: "Clockwork",
     description: "A full-stack web application for managing employee schedules.",
-    technologies: ["React Native", "Expo", "TypeScript", "Go", "Gin", "PostgreSQL", "Auth0"],
+    technologies: ["React Native", "Expo", "PostgreSQL", "Go"],
     status: "in-progress",
-    imageUrl: "/projects/clockwork.png"
+    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/clockwork.png`
   },
   {
     title: "MCAT Mentor Landing Page",
@@ -26,7 +26,7 @@ const projects: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/mcatmentor/website",
     liveUrl: "https://mcatmentor.org",
-    imageUrl: "/projects/mcatmentor.png",
+    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/mcatmentor.png`,
     status: "completed"
   },
   {
@@ -34,7 +34,15 @@ const projects: Project[] = [
     description: "A PaperMC plugin that allows players to share and manage coordinates.",
     technologies: ["Java", "Plugin Development"],
     githubUrl: "https://github.com/dizzyfrogs/CoordBoard",
-    imageUrl: "/projects/coordboard.png",
+    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/coordboard.png`,
+    status: "completed"
+  },
+  {
+    title: "ContactsApp",
+    description: "A contacts management application built with Flask, SQLAlchemy & Python.",
+    technologies: ["Python", "SQLAlchemy", "Flask"],
+    githubUrl: "https://github.com/dizzyfrogs/ContactsApp",
+    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/contactsapp.jpg`,
     status: "completed"
   },
   {
@@ -42,15 +50,8 @@ const projects: Project[] = [
     description: "Command-line tic-tac-toe that serializes and encrypts every move.",
     technologies: ["Python", "Cryptography"],
     githubUrl: "https://github.com/dizzyfrogs/encrypted-tic-tac-toe",
-    imageUrl: "/projects/tictactoe.png",
+    imageUrl: `${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/tictactoe.png`,
     status: "completed"
-  },
-  {
-    title: "Hevy Follow Manager",
-    description: "Modular automation tool for increasing user engagement on Hevy.",
-    technologies: ["Python", "API"],
-    imageUrl: "/projects/hevy.png",
-    status: "in-progress"
   }
 ];
 
