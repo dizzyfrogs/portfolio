@@ -21,6 +21,22 @@ const projects: Project[] = [
     imageUrl: "/projects/clockwork.png"
   },
   {
+    title: "CoordBoard",
+    description: "A PaperMC plugin that allows players to share and manage coordinates.",
+    technologies: ["Java", "Plugin Development"],
+    githubUrl: "https://github.com/dizzyfrogs/CoordBoard",
+    imageUrl: "/projects/coordboard.png",
+    status: "completed"
+  },
+  {
+    title: "Hevy Follow Manager",
+    description: "Modular automation tool for increasing user engagement on Hevy.",
+    technologies: ["Python", "API"],
+    githubUrl: "https://github.com/dizzyfrogs/hevy-engagement-bot",
+    imageUrl: "/projects/hevy.png",
+    status: "completed"
+  },
+  {
     title: "MCAT Mentor Landing Page",
     description: "A modern, responsive landing page for MCAT Mentor.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -30,27 +46,12 @@ const projects: Project[] = [
     status: "completed"
   },
   {
-    title: "CoordBoard",
-    description: "A PaperMC plugin that allows players to share and manage coordinates.",
-    technologies: ["Java", "Plugin Development"],
-    githubUrl: "https://github.com/dizzyfrogs/CoordBoard",
-    imageUrl: "/projects/coordboard.png",
-    status: "completed"
-  },
-  {
     title: "Encrypted Tic-Tac-Toe",
     description: "Command-line tic-tac-toe that serializes and encrypts every move.",
     technologies: ["Python", "Cryptography"],
     githubUrl: "https://github.com/dizzyfrogs/encrypted-tic-tac-toe",
     imageUrl: "/projects/tictactoe.png",
     status: "completed"
-  },
-  {
-    title: "Hevy Follow Manager",
-    description: "Modular automation tool for increasing user engagement on Hevy.",
-    technologies: ["Python", "API"],
-    imageUrl: "/projects/hevy.png",
-    status: "in-progress"
   }
 ];
 
