@@ -29,7 +29,7 @@ const projects: Project[] = [
     status: "completed"
   },
   {
-    title: "Hevy Follow Manager",
+    title: "Hevy Engagement Bot",
     description: "Modular automation tool for increasing user engagement on Hevy.",
     technologies: ["Python", "API"],
     githubUrl: "https://github.com/dizzyfrogs/hevy-engagement-bot",
