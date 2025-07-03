@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     title: "Hevy Engagement Bot",
     description: "Modular automation tool for increasing user engagement on Hevy.",
-    technologies: ["Python", "API"],
+    technologies: ["Python", "CLI", "API"],
     githubUrl: "https://github.com/dizzyfrogs/hevy-engagement-bot",
     imageUrl: "/projects/hevy.png",
     status: "completed"
@@ -48,9 +48,17 @@ const projects: Project[] = [
   {
     title: "Encrypted Tic-Tac-Toe",
     description: "Command-line tic-tac-toe that serializes and encrypts every move.",
-    technologies: ["Python", "Cryptography"],
+    technologies: ["Python", "CLI", "Cryptography"],
     githubUrl: "https://github.com/dizzyfrogs/encrypted-tic-tac-toe",
     imageUrl: "/projects/tictactoe.png",
+    status: "completed"
+  },
+  {
+    title: "BrainPy",
+    description: "A simple Brainf*** programming language interpreter.",
+    technologies: ["Python", "CLI", "Interpreters"],
+    githubUrl: "https://github.com/dizzyfrogs/brainpy",
+    imageUrl: "/projects/brainpy.png",
     status: "completed"
   }
 ];
