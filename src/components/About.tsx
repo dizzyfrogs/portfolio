@@ -53,17 +53,10 @@ const About = () => {
                 Background
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                I&apos;m a Junior Computer Science student at Old Dominion University. I got into tech when
-                I was a kid just trying to make mods for my favorite games. That curiosity practically evolved
-                overnight. I started learning how games worked under the hood, which led me to explore tools
-                like Cheat Engine and dive into video game hacking. I wasn&apos;t in it to cheat, though. I was
-                fascinated by how software could be manipulated and how systems were built.
+                 I'm a Junior Computer Science student at Old Dominion University, but my journey with tech started way before college. As a kid, I just wanted to make mods for my favorite games, and that curiosity turned into a full-on obsession with how software actually works.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                That early interest in reverse engineering eventually turned into a passion for software development.
-                Now, I love building full-stack applications, working on fun side projects, and constantly challenging myself
-                to learn new tools and technologies. Whether I&apos;m coding something practical or just experimenting, I&apos;m always
-                trying to grow as a developer.
+                What started as game tinkering grew into a passion for building. Now, I spend most of my time creating full-stack apps, experimenting with new tools, and working on fun side projects. I love challenging myself to learn something new every day, whether it’s a new framework, a weird bug, or just an idea I can bring to life through code.
               </p>
             </div>
 
