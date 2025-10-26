@@ -53,10 +53,10 @@ const About = () => {
                 Background
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                 I'm a Junior Computer Science student at Old Dominion University, but my journey with tech started way before college. As a kid, I just wanted to make mods for my favorite games, and that curiosity turned into a full-on obsession with how software actually works.
+                 I&apos;m a Junior Computer Science student at Old Dominion University, but my journey with tech started way before college. As a kid, I just wanted to make mods for my favorite games, and that curiosity turned into a full-on obsession with how software actually works.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                What started as game tinkering grew into a passion for building. Now, I spend most of my time creating full-stack apps, experimenting with new tools, and working on fun side projects. I love challenging myself to learn something new every day, whether it’s a new framework, a weird bug, or just an idea I can bring to life through code.
+                What started as game tinkering grew into a passion for building. Now, I spend most of my time creating full-stack apps, experimenting with new tools, and working on fun side projects. I love challenging myself to learn something new every day, whether it&apos;s a new framework, a weird bug, or just an idea I can bring to life through code.
               </p>
             </div>
 
