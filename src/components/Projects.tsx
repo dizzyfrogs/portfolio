@@ -21,6 +21,13 @@ const projects: Project[] = [
     imageUrl: "/projects/clockwork.png"
   },
   {
+    title: "ChunkLog",
+    description: "A calorie & weight tracking app",
+    technologies: ["FastAPI", "React", "SQLite", "Docker"],
+    status: "completed",
+    imageUrl: "/projects/chunklog.png"
+  },
+  {
     title: "CoordBoard",
     description: "A PaperMC plugin that allows players to share and manage coordinates.",
     technologies: ["Java", "Plugin Development"],
@@ -37,12 +44,11 @@ const projects: Project[] = [
     status: "completed"
   },
   {
-    title: "MCAT Mentor Landing Page",
-    description: "A modern, responsive landing page for MCAT Mentor.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/mcatmentor/website",
-    liveUrl: "https://mcatmentor.org",
-    imageUrl: "/projects/mcatmentor.png",
+    title: "BrainPy",
+    description: "A simple Brainf*** programming language interpreter.",
+    technologies: ["Python", "CLI", "Interpreters"],
+    githubUrl: "https://github.com/dizzyfrogs/brainpy",
+    imageUrl: "/projects/brainpy.png",
     status: "completed"
   },
   {
@@ -54,13 +60,14 @@ const projects: Project[] = [
     status: "completed"
   },
   {
-    title: "BrainPy",
-    description: "A simple Brainf*** programming language interpreter.",
-    technologies: ["Python", "CLI", "Interpreters"],
-    githubUrl: "https://github.com/dizzyfrogs/brainpy",
-    imageUrl: "/projects/brainpy.png",
+    title: "MCAT Mentor Landing Page",
+    description: "A modern, responsive landing page for MCAT Mentor.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/mcatmentor/website",
+    liveUrl: "https://mcatmentor.org",
+    imageUrl: "/projects/mcatmentor.png",
     status: "completed"
-  }
+  },
 ];
 
 const Projects = () => {
