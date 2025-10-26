@@ -17,15 +17,16 @@ const projects: Project[] = [
     title: "Clockwork",
     description: "A full-stack web application for managing employee schedules.",
     technologies: ["React Native", "Expo", "TypeScript", "Go", "Gin", "PostgreSQL", "Auth0"],
-    status: "in-progress",
+    status: "completed",
     imageUrl: "/projects/clockwork.png"
   },
   {
     title: "ChunkLog",
     description: "A calorie & weight tracking app",
     technologies: ["FastAPI", "React", "SQLite", "Docker"],
-    status: "completed",
-    imageUrl: "/projects/chunklog.png"
+    imageUrl: "/projects/chunklog.png",
+    githubUrl: "https://github.com/dizzyfrogs/chunklog",
+    status: "completed"
   },
   {
     title: "CoordBoard",
