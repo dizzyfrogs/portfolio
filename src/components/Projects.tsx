@@ -29,6 +29,14 @@ const projects: Project[] = [
     status: "completed"
   },
   {
+    title: "Stagstation",
+    description: "A desktop application for managing save files for Hollow Knight.",
+    technologies: ["Electron", "React", "JavaScript"],
+    imageUrl: "/projects/stagstation.png",
+    githubUrl: "https://github.com/dizzyfrogs/stagstation",
+    status: "completed"
+  },
+  {
     title: "CoordBoard",
     description: "A PaperMC plugin that allows players to share and manage coordinates.",
     technologies: ["Java", "Plugin Development"],
@@ -45,11 +53,28 @@ const projects: Project[] = [
     status: "completed"
   },
   {
+    title: "No GPU, Just Math",
+    description: "A terminal-based 3D renderer that uses only the CPU.",
+    technologies: ["Python", "CLI", "3D Rendering"],
+    githubUrl: "https://github.com/dizzyfrogs/no-gpu-just-math",
+    imageUrl: "/projects/nogpu.png",
+    status: "completed"
+  },
+  {
     title: "BrainPy",
     description: "A simple Brainf*** programming language interpreter.",
     technologies: ["Python", "CLI", "Interpreters"],
     githubUrl: "https://github.com/dizzyfrogs/brainpy",
     imageUrl: "/projects/brainpy.png",
+    status: "completed"
+  },
+  {
+    title: "MineZora Landing Page",
+    description: "A sleek landing page for the MineZora Hytale server.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/1stDestroyer/minezora-website",
+    liveUrl: "https://minezora.com",
+    imageUrl: "/projects/minezora.png",
     status: "completed"
   },
   {
