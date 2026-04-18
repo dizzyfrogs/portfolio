@@ -1,9 +1,25 @@
 import { getAllPosts } from "@/lib/posts";
 import BlogPostList from "@/components/blog/BlogPostList";
 
-export const metadata = {
-  title: "Blog | Suleiman Mejd",
-  description: "Occasional writing on things I'm building and learning.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Occasional writing on things I'm building and learning. Algorithms, side projects, and software engineering.",
+  openGraph: {
+    title: "Blog | Suleiman Mejd",
+    description:
+      "Occasional writing on things I'm building and learning. Algorithms, side projects, and software engineering.",
+    url: "https://suleiman.dev/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Blog | Suleiman Mejd",
+    description:
+      "Occasional writing on things I'm building and learning. Algorithms, side projects, and software engineering.",
+  },
 };
 
 export default function BlogPage() {

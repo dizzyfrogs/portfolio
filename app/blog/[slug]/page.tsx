@@ -12,9 +12,22 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const post = getPostBySlug(params.slug);
+  const title = `${post.title} | Suleiman Mejd`;
   return {
-    title: `${post.title} | Suleiman Mejd`,
+    title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title,
+      description: post.excerpt,
+      url: `https://suleiman.dev/blog/${post.slug}`,
+      type: "article",
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description: post.excerpt,
+    },
   };
 }
 

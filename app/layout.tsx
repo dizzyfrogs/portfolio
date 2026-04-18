@@ -11,34 +11,37 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Suleiman Mejd | Portfolio",
+  metadataBase: new URL("https://suleiman.dev"),
+  title: {
+    template: "%s | Suleiman Mejd",
+    default: "Suleiman Mejd — Full-Stack Developer",
+  },
   description:
-    "Full-stack developer building thoughtful software. Currently studying CS at ODU. Projects span web, mobile, and systems.",
+    "Full-stack developer and CS student at Old Dominion University. I build web apps, mobile tools, and the occasional thing that probably shouldn't exist.",
   authors: [{ name: "Suleiman Mejd" }],
   keywords: ["Suleiman Mejd", "full-stack developer", "software engineer", "portfolio", "Next.js"],
   openGraph: {
-    title: "Suleiman Mejd | Portfolio",
+    title: "Suleiman Mejd - Full-Stack Developer",
     description:
-      "Full-stack developer building thoughtful software. Currently studying CS at ODU.",
+      "Full-stack developer and CS student at Old Dominion University. I build web apps, mobile tools, and the occasional thing that probably shouldn't exist.",
     url: "https://suleiman.dev",
     siteName: "Suleiman Mejd",
     type: "website",
     images: [
       {
-        url: "https://suleiman.dev/og.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Suleiman Mejd | Portfolio",
+        alt: "Suleiman Mejd - Full-Stack Developer",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Suleiman Mejd | Portfolio",
-    description: "Full-stack developer building thoughtful software.",
-    images: ["https://suleiman.dev/og.png"],
+    card: "summary",
+    title: "Suleiman Mejd — Full-Stack Developer",
+    description:
+      "Full-stack developer and CS student at Old Dominion University. I build web apps, mobile tools, and the occasional thing that probably shouldn't exist.",
   },
-  metadataBase: new URL("https://suleiman.dev"),
 };
 
 export default function RootLayout({
