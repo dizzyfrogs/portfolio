@@ -16,6 +16,9 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://suleiman.dev/blog/${post.slug}`,
+    },
     openGraph: {
       title,
       description: post.excerpt,
@@ -33,5 +36,27 @@ export async function generateMetadata({
 
 export default function PostPage({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
-  return <PostContent post={post} />;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    url: `https://suleiman.dev/blog/${post.slug}`,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "Suleiman Mejd",
+      url: "https://suleiman.dev",
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <PostContent post={post} />
+    </>
+  );
 }

@@ -17,7 +17,7 @@ function formatDate(dateStr: string): string {
 
 export default function PostContent({ post }: { post: Post }) {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
@@ -28,7 +28,7 @@ export default function PostContent({ post }: { post: Post }) {
           href="/blog"
           className="inline-flex items-center gap-1.5 font-mono text-[12px] text-text-hint dark:text-text-dark-hint hover:text-text-secondary dark:hover:text-text-dark-secondary transition-colors duration-150 mb-8"
         >
-          <ArrowLeft size={16} />
+          <ArrowLeft size={16} aria-hidden="true" />
           Back to blog
         </Link>
 
@@ -37,7 +37,7 @@ export default function PostContent({ post }: { post: Post }) {
         </h1>
 
         <p className="font-mono text-[12px] text-text-hint dark:text-text-dark-hint mb-8">
-          {formatDate(post.date)}
+          {formatDate(post.date)} · {post.readingTime}
         </p>
 
         <hr className="border-[0.5px] border-border dark:border-border-dark mb-8" />
@@ -46,6 +46,6 @@ export default function PostContent({ post }: { post: Post }) {
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }

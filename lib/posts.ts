@@ -9,10 +9,17 @@ export interface PostMeta {
   title: string;
   date: string;
   excerpt: string;
+  readingTime: string;
 }
 
 export interface Post extends PostMeta {
   content: string;
+}
+
+export function readingTime(content: string): string {
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return `${minutes} min read`;
 }
 
 export function getAllPosts(): PostMeta[] {
@@ -22,12 +29,13 @@ export function getAllPosts(): PostMeta[] {
     .map((f) => {
       const slug = f.replace(/\.md$/, "");
       const raw = fs.readFileSync(path.join(postsDir, f), "utf8");
-      const { data } = matter(raw);
+      const { data, content } = matter(raw);
       return {
         slug,
         title: data.title as string,
         date: data.date as string,
         excerpt: data.excerpt as string,
+        readingTime: readingTime(content),
       };
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -42,6 +50,7 @@ export function getPostBySlug(slug: string): Post {
     title: data.title as string,
     date: data.date as string,
     excerpt: data.excerpt as string,
+    readingTime: readingTime(content),
     content,
   };
 }

@@ -12,7 +12,7 @@ export interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="group flex flex-col rounded-xl bg-surface dark:bg-surface-dark border-[0.5px] border-border dark:border-border-dark shadow-card dark:shadow-none hover:border-border-hover dark:hover:border-border-dark-hover transition-colors duration-150 overflow-hidden">
+    <article className="group flex flex-col rounded-xl bg-surface dark:bg-surface-dark border-[0.5px] border-border dark:border-border-dark shadow-card dark:shadow-none hover:border-border-hover dark:hover:border-border-dark-hover transition-colors duration-150 overflow-hidden">
       {/* Project image */}
       {project.image && (
         <div className="relative w-full h-[200px] overflow-hidden bg-surface-secondary dark:bg-surface-dark-secondary border-b-[0.5px] border-b-border dark:border-b-border-dark">
@@ -76,6 +76,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
