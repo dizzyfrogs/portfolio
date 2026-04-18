@@ -1,10 +1,10 @@
 ---
 title: "Why Timing Matters More Than Repetition"
 date: "2026-04-17"
-excerpt: "You don't have a memory problem. You have a scheduling problem."
+excerpt: "It turns out remembering things has a lot more to do with timing than I thought."
 ---
 
-## Retention is the hard part
+## Retention is the Hard Part
 
 I used to think that if I really understood something, it would just stick.
 
