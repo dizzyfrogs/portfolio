@@ -25,11 +25,13 @@ export async function generateMetadata({
       url: `https://suleiman.dev/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suleiman Mejd" }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description: post.excerpt,
+      images: ["/og.png"],
     },
   };
 }

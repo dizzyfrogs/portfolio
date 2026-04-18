@@ -15,12 +15,14 @@ export const metadata: Metadata = {
       "Occasional writing on things I'm building and learning. Algorithms, side projects, and software engineering.",
     url: "https://suleiman.dev/blog",
     type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suleiman Mejd" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Blog | Suleiman Mejd",
     description:
       "Occasional writing on things I'm building and learning. Algorithms, side projects, and software engineering.",
+    images: ["/og.png"],
   },
 };
 
