@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://suleiman.dev"),
   title: {
     template: "%s | Suleiman Mejd",
-    default: "Suleiman Mejd — Full-Stack Developer",
+    default: "Suleiman Mejd | Full-Stack Developer",
   },
   description:
     "Full-stack developer and CS student at Old Dominion University. I build web apps, mobile tools, and the occasional thing that probably shouldn't exist.",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Suleiman Mejd - Full-Stack Developer",
+        alt: "Suleiman Mejd | Full-Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Suleiman Mejd — Full-Stack Developer",
+    title: "Suleiman Mejd | Full-Stack Developer",
     description:
       "Full-stack developer and CS student at Old Dominion University. I build web apps, mobile tools, and the occasional thing that probably shouldn't exist.",
   },
