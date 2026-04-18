@@ -40,3 +40,6 @@ yarn-error.log*
 
 # keep public assets tracked
 !public/projects/**
+
+# generated export output
+/docs
