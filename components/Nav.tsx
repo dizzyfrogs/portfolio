@@ -5,8 +5,9 @@ import { Menu, X, FileText } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Blog", href: "/blog" },
   { label: "Resume", href: "/resume.pdf", external: true },
 ];
 
@@ -22,8 +23,9 @@ export default function Nav() {
 
   const handleLink = (href: string, external?: boolean) => {
     setOpen(false);
-    if (!external && href.startsWith("#")) {
-      const el = document.querySelector(href);
+    if (!external && href.startsWith("/#")) {
+      const hash = href.slice(1);
+      const el = document.querySelector(hash);
       el?.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -39,7 +41,7 @@ export default function Nav() {
       >
         <nav className="max-w-5xl mx-auto px-4 md:px-6 h-14 flex items-center justify-between">
           <a
-            href="#"
+            href="/"
             className="font-sans font-medium text-sm tracking-tight transition-colors duration-150 text-text-primary dark:text-[#ede8e0]"
           >
             suleiman.dev
