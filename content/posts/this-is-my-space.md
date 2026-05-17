@@ -62,7 +62,7 @@ Also I run arch, by the way.
 
 ## The Hackathon
 
-A teammate and I built something for a hackathon over a few days. A campus food waste tracker that connected kitchens to local food banks, with an AI layer that analyzed patterns and generated recommendations for managers.
+A friend and I built something for a hackathon over a few days. A campus food waste tracker that connected kitchens to local food banks, with an AI layer that analyzed patterns and generated recommendations for managers.
 
 ![Glean](/posts/glean.png)
 
