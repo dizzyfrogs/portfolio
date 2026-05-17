@@ -172,6 +172,17 @@
     margin: 0;
   }
 
+  .prose-blog img {
+    border-radius: 12px;
+    border: 0.5px solid #e4ddd4;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .dark .prose-blog img {
+    border-color: #2a2520;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  }
+
   .prose-blog hr {
     border-color: #e4ddd4;
     border-top-width: 0.5px;
