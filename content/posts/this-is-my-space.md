@@ -66,7 +66,7 @@ A friend and I built something for a hackathon over a few days. A campus food wa
 
 ![Glean](/posts/glean.png)
 
-To make the AI behave the way we needed, I had to write a system prompt. Instructions that live above the conversation, shaping how the model responds before you say anything.
+To make the AI behave the way we needed, we had to write a system prompt. Instructions that live above the conversation, shaping how the model responds before you say anything.
 
 Spending those days sitting with that, something clicked. The product was just a model plus a system prompt plus a UI.
 
