@@ -87,7 +87,7 @@ export default function About() {
             {/* Bio */}
             <SectionReveal delay={0.05}>
               <p className="font-sans font-light text-base text-text-secondary dark:text-text-dark-secondary leading-relaxed max-w-prose">
-                I&apos;m a full-stack developer studying Computer Science at Old Dominion Uiversity. I build web and mobile applications
+                I&apos;m a full-stack developer studying Computer Science at Old Dominion University. I build web and mobile applications
                 with a focus on clean architecture, intuitive UX, and thoughtful design. I also enjoy exploring new technology
                 when a project calls for it.
               </p>
