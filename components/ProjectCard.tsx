@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { GitBranch, ExternalLink } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 export interface Project {
   name: string;
@@ -42,7 +42,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 aria-label="Source code"
                 className="flex items-center justify-center w-7 h-7 rounded-md text-text-muted dark:text-text-dark-muted hover:text-text-secondary dark:hover:text-text-dark-secondary hover:bg-surface-secondary dark:hover:bg-surface-dark-secondary transition-colors duration-150"
               >
-                <GitBranch size={14} />
+                <Github size={14} />
               </a>
             )}
             {project.live && (
