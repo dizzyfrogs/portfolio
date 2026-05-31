@@ -103,6 +103,12 @@ export default function Hero() {
               >
                 About Me
               </a>
+              <a
+                href="/blog"
+                className="inline-flex items-center h-10 px-4 rounded-md font-sans font-medium text-[13.5px] text-text-muted dark:text-[#5a5248] hover:text-text-secondary dark:hover:text-[#8a8278] hover:bg-surface-secondary dark:hover:bg-[#1a1714] transition-colors duration-150"
+              >
+                Blog
+              </a>
             </motion.div>
 
             <motion.div
